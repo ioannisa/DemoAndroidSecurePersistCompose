@@ -1,5 +1,6 @@
 package com.example.demoandroidsecurepersist.di
 
+import KVault
 import com.example.demoandroidsecurepersist.screens.libcounter.LibCounterViewModel
 import eu.anifantakis.lib.securepersist.PersistManager
 import org.koin.android.ext.koin.androidContext
@@ -11,5 +12,9 @@ val libraryModule = module {
 
     single<PersistManager> {
         PersistManager(androidContext())
+    }
+
+    single<KVault>{
+        KVault(androidContext())
     }
 }

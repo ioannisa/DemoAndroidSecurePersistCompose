@@ -30,12 +30,20 @@ fun LibCounterScreen(counterViewModel: LibCounterViewModel = koinViewModel()) {
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(16.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
 
+            Text(text = "mutableStateOf", fontSize = 18.sp)
             LabelCard(label = "Counter 1:", content = "${counterViewModel.count1}")
+
+            Text(text = "mutableStateOf - DataStore - Encrypted", fontSize = 18.sp)
             LabelCard(label = "Counter 2:", content = "${counterViewModel.count2}")
+
+            Text(text = "mutableStateOf - DataStore", fontSize = 18.sp)
             LabelCard(label = "Counter 3:", content = "${counterViewModel.count3}")
+
+            Text(text = "mutableStateOf - kvault - Encrypted", fontSize = 18.sp)
+            LabelCard(label = "Counter 4:", content = "${counterViewModel.count4}")
 
             Spacer(modifier = Modifier.padding(16.dp))
 

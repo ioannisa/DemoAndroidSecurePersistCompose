@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.demoandroidsecurepersist"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.demoandroidsecurepersist"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -54,7 +54,9 @@ dependencies {
     implementation(libs.secure.persist)
     implementation(libs.secure.persist.compose)
 
-
+    // KMP secure persist (evolution of android persist manager)
+    implementation("eu.anifantakis:kvault:1.0.0-beta01.3")
+    implementation("eu.anifantakis:kvault-compose:1.0.0-beta01.3")
 
     // Koin
     implementation(libs.bundles.koin)
