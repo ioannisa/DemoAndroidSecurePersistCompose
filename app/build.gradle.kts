@@ -55,8 +55,8 @@ dependencies {
     implementation(libs.secure.persist.compose)
 
     // KMP secure persist (evolution of android persist manager)
-    implementation("eu.anifantakis:kvault:1.0.0-beta01.3")
-    implementation("eu.anifantakis:kvault-compose:1.0.0-beta01.3")
+    implementation("eu.anifantakis:kvault:1.0.0-beta01.5")
+    implementation("eu.anifantakis:kvault-compose:1.0.0-beta01.5")
 
     // Koin
     implementation(libs.bundles.koin)

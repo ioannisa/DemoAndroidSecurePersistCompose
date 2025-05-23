@@ -1,14 +1,14 @@
 package com.example.demoandroidsecurepersist.screens.libcounter
 
-import KVault
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import eu.anifantakis.kvault.compose.mutableStateOf
+import eu.anifantakis.lib.kvault.KVault
+import eu.anifantakis.lib.kvault.invoke
 import eu.anifantakis.lib.securepersist.PersistManager
 import eu.anifantakis.lib.securepersist.compose.mutableStateOf
-import invoke
+import eu.eu.anifantakis.lib.kvault.compose.mutableStateOf
 
 
 class LibCounterViewModel(
